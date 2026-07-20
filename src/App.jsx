@@ -1,39 +1,16 @@
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import ContentCard from './components/ContentCard.jsx'
+import Greetings from './components/Greetings.jsx'
+import MyHobbies from './components/MyHobbies.jsx'
+import Profile from './components/Profile.jsx'
 
 function App() {
   return (
     <HashRouter>
-      {/* Every route reuses the same component with different data. */}
       <Routes>
-        <Route
-          path="/"
-          element={
-            <ContentCard
-              title="Greetings"
-              content="Hello, React!"
-            />
-          }
-        />
-        <Route
-          path="/profiles"
-          element={
-            <ContentCard
-              title="Profiles"
-              content="CSX4107 Web Development Student"
-            />
-          }
-        />
-        <Route
-          path="/my-hobbies"
-          element={
-            <ContentCard
-              title="My Hobbies"
-              content="Coding, watching movies, and listening to music"
-            />
-          }
-        />
+        <Route path="/" element={<Greetings />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/my-hobbies" element={<MyHobbies />} />
       </Routes>
     </HashRouter>
   )
