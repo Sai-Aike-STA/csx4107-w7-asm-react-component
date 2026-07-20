@@ -1,0 +1,24 @@
+.card {
+  width: min(240px, calc(100vw - 64px));
+  min-height: 210px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #736a80;
+}
+
+.card h1 {
+  margin: 0 0 14px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.5;
+}
